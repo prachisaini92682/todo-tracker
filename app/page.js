@@ -17,7 +17,7 @@ const page = () => {
     settitle("");
     setdesc("");
   };
-  let renderTask = <h2>No Task Available</h2>;
+  let renderTask = <h2>No Task Availables</h2>;
   if (mainTask.length > 0) {
     renderTask = mainTask.map((t, i) => {
       return (
