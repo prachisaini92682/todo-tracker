@@ -23,7 +23,7 @@ const page = () => {
     copytask.splice(i, 1);
     setMainTask(copytask);
   };
-  let renderTask = <h2> No Task Available</h2>;
+  let renderTask = <h2> No Tasks Available</h2>;
   if (mainTask.length > 0) {
     renderTask = mainTask.map((t, i) => {
       return (
