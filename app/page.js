@@ -11,6 +11,7 @@ const page = () => {
   const [title, settitle] = useState("");
   const [desc, setdesc] = useState("");
   const [mainTask, setMainTask] = useState([]);
+
   const submitHandler = (e) => {
     e.preventDefault();
     setMainTask([...mainTask, { title, desc }]);
@@ -69,9 +70,7 @@ const page = () => {
           }}
         />
         <button className="bg-black text-white px-4 py-3 text-2xl font-bold rounded m-5">Add Task</button>
-        {/* <button className="bg-black text-white px-4 py-3 text-2xl font-bold rounded m-5" onClick={() => settitle("")}>
-          CLear values
-        </button> */}
+        
       </form>
       <div className="p-8 bg-slate-200">
         <ul>{renderTask}</ul>
